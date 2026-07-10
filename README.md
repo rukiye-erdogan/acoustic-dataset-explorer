@@ -186,3 +186,22 @@ Current scope:
 The repository contains synthetic metadata created for demonstration purposes. No third-party audio files are included.
 
 The source code is licensed under the [MIT License](LICENSE).
+
+
+## Visualisations
+
+The repository includes generated visual summaries based on the synthetic metadata sample.
+
+### Category distribution
+
+![Acoustic metadata records by category](assets/category_distribution.png)
+
+### Metadata quality status
+
+![Metadata quality status](assets/quality_status.png)
+
+Generate the visualisations locally with:
+
+```bash
+python -m src.generate_visualizations
+```
