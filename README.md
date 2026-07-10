@@ -5,6 +5,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Open Source](https://img.shields.io/badge/open--source-ready-blue)](#project-status)
 
+[![CI](https://github.com/rukiye-erdogan/acoustic-dataset-explorer/actions/workflows/ci.yml/badge.svg)](https://github.com/rukiye-erdogan/acoustic-dataset-explorer/actions/workflows/ci.yml)
+
 A reproducible Python data-engineering project for validating, standardising and analysing acoustic metadata.
 
 ## Why this project
