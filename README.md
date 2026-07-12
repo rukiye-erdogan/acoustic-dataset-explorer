@@ -72,18 +72,24 @@ The current dashboard analyses more than **2,600 audio files** collected from mu
 
 ## 📁 Repository Structure
 
-\`\`\`
+```text
 acoustic-dataset-explorer/
-│
-├── app.py
+├── .streamlit/
+│   └── config.toml
 ├── assets/
 │   └── dashboard/
 │       └── dashboard_overview.png
 ├── data/
+│   └── public/
+│       ├── acoustic_metadata.db
+│       └── acoustic_metadata_public.csv
+├── app.py
+├── import_to_postgres.py
 ├── README.md
 ├── requirements.txt
+├── .gitignore
 └── LICENSE
-\`\`\`
+```
 
 ---
 
