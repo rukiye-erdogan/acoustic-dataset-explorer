@@ -1,7 +1,0 @@
-file_id,source,event_type,category,duration_seconds,sample_rate,channels,license,quality_status
-sample_001,synthetic,rain,environment,12.4,44100,2,CC0,validated
-sample_002,synthetic,traffic,environment,18.7,48000,2,CC0,validated
-sample_003,synthetic,metal_scrape,mechanical_contact,3.8,44100,1,CC0,review_required
-sample_004,synthetic,air_hiss,air_release,5.2,48000,1,CC0,validated
-sample_005,synthetic,car_door,vehicle_sound,2.1,44100,2,CC0,validated
-sample_006,synthetic,dog_barking,environment,7.5,44100,1,CC0,review_required
