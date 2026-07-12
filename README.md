@@ -1,72 +1,117 @@
-# Acoustic Dataset Explorer
+# 🎧 Acoustic Dataset Explorer
 
-Interactive Streamlit dashboard for exploring and analysing acoustic metadata from Freesound and ZapSplat.
+An open-source data engineering project for collecting, validating, standardising and exploring acoustic metadata.
 
-## Dashboard features
+![Dashboard Overview](assets/dashboard/dashboard_overview.png)
 
-- Category distribution
-- Total audio-file count
-- Event-type statistics
-- Source comparison
-- URL availability monitoring
-- Metadata preview with source links
-- URL export
-- Source-distribution visualisation
+---
 
-## Dataset snapshot
+## 🚀 Live Applications
 
-- 2,613 metadata records
-- 504 event types
-- 7 categories
-- 2 metadata sources
-- 100% source-URL availability
+### 📊 Streamlit Dashboard
+> Coming soon
 
-## Data sources
+### 📈 Metabase Dashboard
+> Coming soon
 
-- Freesound
-- ZapSplat
+---
 
-This repository contains metadata and source references only. It does not redistribute third-party audio files.
+## ✨ Project Overview
 
-## Project structure
+The Acoustic Dataset Explorer provides a reproducible workflow for analysing metadata from public acoustic datasets.
 
-```text
-acoustic-dataset-explorer/
-├── .streamlit/
-│   └── config.toml
-├── data/
-│   └── public/
-│       ├── acoustic_metadata.db
-│       └── acoustic_metadata_public.csv
-├── app.py
-├── import_to_postgres.py
-├── requirements.txt
-├── LICENSE
-├── .gitignore
-└── README.md
-```
-
-## Run locally
-
-```bash
-git clone https://github.com/rukiye-erdogan/acoustic-dataset-explorer.git
-cd acoustic-dataset-explorer
-python3 -m pip install -r requirements.txt
-python3 -m streamlit run app.py
-```
-
-Open `http://localhost:8501`.
-
-## Technologies
+The project demonstrates practical data engineering skills by combining:
 
 - Python
-- Streamlit
-- pandas
-- Plotly
-- SQLite
 - PostgreSQL
-- Git and GitHub
+- Streamlit
+- Metabase
+- Docker
+- Git
+- GitHub
 
-## Licence
+The current dashboard analyses more than **2,600 audio files** collected from multiple open-source platforms.
 
-The source code is licensed under the MIT License.
+---
+
+## 📊 Dashboard Features
+
+### Category Overview
+
+- Category distribution
+- Audio file statistics
+- Category summary table
+- Percentage distribution
+
+### Files & Sources Overview
+
+- Total audio files
+- Event types
+- Dataset sources
+- URL availability
+- Source distribution
+- Interactive Plotly charts
+- Exportable metadata tables
+
+---
+
+## 🛠 Technology Stack
+
+| Area | Technology |
+|------|------------|
+| Language | Python |
+| Dashboard | Streamlit |
+| BI | Metabase |
+| Database | PostgreSQL |
+| Charts | Plotly |
+| Data Processing | Pandas |
+| Containerisation | Docker |
+| Version Control | Git + GitHub |
+
+---
+
+## 📁 Repository Structure
+
+\`\`\`
+acoustic-dataset-explorer/
+│
+├── app.py
+├── assets/
+│   └── dashboard/
+│       └── dashboard_overview.png
+├── data/
+├── README.md
+├── requirements.txt
+└── LICENSE
+\`\`\`
+
+---
+
+## 🎯 Current Dataset
+
+| Metric | Value |
+|---------|------:|
+| Audio Files | 2,613 |
+| Categories | 7 |
+| Event Types | 504 |
+| Sources | 2 |
+| URL Availability | 100% |
+
+---
+
+## 🚧 Roadmap
+
+- ✅ Metadata validation
+- ✅ Interactive Streamlit dashboard
+- ✅ Source statistics
+- ✅ Category analytics
+- ⏳ Streamlit Cloud deployment
+- ⏳ Metabase deployment
+- ⏳ Docker Compose environment
+- ⏳ Automated data refresh
+
+---
+
+## 📄 Licence
+
+This project is released under the MIT License.
