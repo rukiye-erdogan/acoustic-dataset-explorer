@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white" alt="Python 3.9+">
   </a>
   <a href="https://github.com/rukiye-erdogan/acoustic-dataset-explorer/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/rukiye-erdogan/acoustic-dataset-explorer" alt="MIT License">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT License">
   </a>
   <a href="https://github.com/rukiye-erdogan/acoustic-dataset-explorer/commits/main">
     <img src="https://img.shields.io/github/last-commit/rukiye-erdogan/acoustic-dataset-explorer" alt="Last Commit">
