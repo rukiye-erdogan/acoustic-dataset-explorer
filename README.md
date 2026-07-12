@@ -140,7 +140,7 @@ acoustic-dataset-explorer/
 - ✅ Category analytics
 - ✅ Streamlit Cloud deployment
 - ⏳ Metabase deployment
-- ⏳ Docker Compose environment
+- ✅ Docker Compose environment
 - ⏳ Automated data refresh
 
 ---
@@ -148,3 +148,67 @@ acoustic-dataset-explorer/
 ## 📄 Licence
 
 This project is released under the MIT License.
+
+---
+
+## 🐳 Docker Deployment
+
+Run the complete Acoustic Dataset Explorer locally using Docker.
+
+### Prerequisites
+
+- Docker Desktop
+- Docker Compose
+
+### Clone the repository
+
+```bash
+git clone https://github.com/rukiye-erdogan/acoustic-dataset-explorer.git
+cd acoustic-dataset-explorer
+```
+
+### Build the image
+
+```bash
+docker compose build
+```
+
+### Start the application
+
+```bash
+docker compose up
+```
+
+Open the dashboard at:
+
+```text
+http://localhost:8501
+```
+
+### Run in the background
+
+```bash
+docker compose up -d
+```
+
+### Stop the application
+
+```bash
+docker compose down
+```
+
+### Rebuild after changes
+
+```bash
+docker compose up --build
+```
+
+### Docker components
+
+| File | Purpose |
+|---|---|
+| `Dockerfile` | Builds the reproducible Streamlit image |
+| `docker-compose.yml` | Starts the application on port 8501 |
+| `.dockerignore` | Excludes unnecessary files from the build context |
+
+The container runs as a non-root user and includes a health check for the Streamlit service.

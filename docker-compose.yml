@@ -1,0 +1,15 @@
+services:
+  acoustic-dataset-explorer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: acoustic-dataset-explorer
+
+    ports:
+      - "8501:8501"
+
+    restart: unless-stopped
+
+    environment:
+      PYTHONUNBUFFERED: "1"
