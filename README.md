@@ -1,18 +1,45 @@
 # 🎧 Acoustic Dataset Explorer
 
+<p align="left">
+  <a href="https://acoustic-dataset-explorer.streamlit.app">
+    <img src="https://img.shields.io/badge/Streamlit-Live%20Dashboard-FF4B4B?logo=streamlit&logoColor=white" alt="Live Streamlit Dashboard">
+  </a>
+  <a href="https://github.com/rukiye-erdogan/acoustic-dataset-explorer">
+    <img src="https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white" alt="Python 3.9+">
+  </a>
+  <a href="https://github.com/rukiye-erdogan/acoustic-dataset-explorer/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/rukiye-erdogan/acoustic-dataset-explorer" alt="MIT License">
+  </a>
+  <a href="https://github.com/rukiye-erdogan/acoustic-dataset-explorer/commits/main">
+    <img src="https://img.shields.io/github/last-commit/rukiye-erdogan/acoustic-dataset-explorer" alt="Last Commit">
+  </a>
+  <a href="https://github.com/rukiye-erdogan/acoustic-dataset-explorer">
+    <img src="https://img.shields.io/badge/Open%20Source-Yes-2ea44f" alt="Open Source">
+  </a>
+</p>
+
 An open-source data engineering project for collecting, validating, standardising and exploring acoustic metadata.
 
 ![Dashboard Overview](assets/dashboard/dashboard_overview.png)
 
 ---
 
-## 🚀 Live Applications
+## 🚀 Live Application
 
-### 📊 Streamlit Dashboard
-> Coming soon
+### 📊 Interactive Streamlit Dashboard
 
-### 📈 Metabase Dashboard
-> Coming soon
+Explore the acoustic metadata dataset through interactive Plotly charts, category analytics, source statistics and exportable metadata tables.
+
+<p align="left">
+  <a href="https://acoustic-dataset-explorer.streamlit.app">
+    <img src="https://img.shields.io/badge/▶%20Open%20Live%20Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Open Live Dashboard">
+  </a>
+</p>
+
+**Live URL:** [https://acoustic-dataset-explorer.streamlit.app](https://acoustic-dataset-explorer.streamlit.app)
+
+> The public dashboard currently analyses **2,613 audio files**, **504 event types**, **7 categories** and metadata from **Freesound** and **ZapSplat**.
+
 
 ---
 
@@ -111,7 +138,7 @@ acoustic-dataset-explorer/
 - ✅ Interactive Streamlit dashboard
 - ✅ Source statistics
 - ✅ Category analytics
-- ⏳ Streamlit Cloud deployment
+- ✅ Streamlit Cloud deployment
 - ⏳ Metabase deployment
 - ⏳ Docker Compose environment
 - ⏳ Automated data refresh
