@@ -1,5 +1,5 @@
-pandas>=2.0
-pytest>=8.0
-matplotlib>=3.8
-
-plotly
+streamlit==1.51.0
+pandas>=2.0,<3.0
+plotly>=5.20,<7.0
+matplotlib>=3.8,<4.0
+pytest>=8.0,<9.0
