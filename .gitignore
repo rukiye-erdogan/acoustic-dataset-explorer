@@ -10,3 +10,12 @@ venv/
 *.mp3
 *.flac
 *.ogg
+*.py[cod]
+*.log
+nohup.out
+.streamlit/secrets.toml
+app_backup*.py
+app_repaired*.py
+app_number_format_test.py
+fix_*.sh
+repair_*.sh
