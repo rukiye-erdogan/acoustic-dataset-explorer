@@ -212,3 +212,9 @@ docker compose up --build
 | `.dockerignore` | Excludes unnecessary files from the build context |
 
 The container runs as a non-root user and includes a health check for the Streamlit service.
+
+---
+
+## Final Note
+
+This repository demonstrates practical data engineering workflows for collecting, validating, standardising and exploring real-world acoustic metadata. It showcases Python, PostgreSQL, Docker, Streamlit and modern open-source development practices.
