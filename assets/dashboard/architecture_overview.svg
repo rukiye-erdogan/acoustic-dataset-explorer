@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1600"
+    height="1100"
+    viewBox="0 0 1600 1100"
+    role="img"
+    aria-labelledby="title description"
+>
+  <title id="title">Acoustic Dataset Explorer Architecture</title>
+  <desc id="description">
+    Data engineering and local Docker container workflow.
+  </desc>
+
+  <defs>
+    <style>
+      text {
+        font-family: "Inter", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+        text-rendering: geometricPrecision;
+      }
+
+      .title {
+        font-size: 50px;
+        font-weight: 800;
+        fill: #294b38;
+      }
+
+      .subtitle {
+        font-size: 27px;
+        font-weight: 750;
+        fill: #294b38;
+      }
+
+      .section-title {
+        font-size: 21px;
+        font-weight: 750;
+      }
+
+      .node-title {
+        font-size: 21px;
+        font-weight: 750;
+      }
+
+      .node-body {
+        font-size: 15px;
+        font-weight: 400;
+        fill: #465049;
+      }
+
+      .small-title {
+        font-size: 18px;
+        font-weight: 750;
+      }
+
+      .small-body {
+        font-size: 14px;
+        font-weight: 400;
+        fill: #465049;
+      }
+
+      .connector-label {
+        font-size: 14px;
+        font-weight: 450;
+        font-style: italic;
+        fill: #465049;
+      }
+
+      .outline {
+        stroke-width: 2;
+      }
+
+      .connector {
+        fill: none;
+        stroke: #8da69a;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .connector-green {
+        fill: none;
+        stroke: #88ae79;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .connector-purple {
+        fill: none;
+        stroke: #ad91de;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow
+        dx="0"
+        dy="5"
+        stdDeviation="8"
+        flood-color="#8a857a"
+        flood-opacity="0.13"
+      />
+    </filter>
+
+    <marker
+        id="arrow-grey"
+        markerWidth="12"
+        markerHeight="12"
+        refX="10"
+        refY="6"
+        orient="auto"
+        markerUnits="strokeWidth"
+    >
+      <path d="M0,0 L12,6 L0,12 Z" fill="#8da69a"/>
+    </marker>
+
+    <marker
+        id="arrow-green"
+        markerWidth="12"
+        markerHeight="12"
+        refX="10"
+        refY="6"
+        orient="auto"
+        markerUnits="strokeWidth"
+    >
+      <path d="M0,0 L12,6 L0,12 Z" fill="#88ae79"/>
+    </marker>
+
+    <marker
+        id="arrow-purple"
+        markerWidth="12"
+        markerHeight="12"
+        refX="10"
+        refY="6"
+        orient="auto"
+        markerUnits="strokeWidth"
+    >
+      <path d="M0,0 L12,6 L0,12 Z" fill="#ad91de"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="1100" fill="#f8f5ec"/>
+
+  <!-- Main heading -->
+  <text x="800" y="62" text-anchor="middle" class="title">
+    Acoustic Dataset Explorer
+  </text>
+
+  <text x="800" y="103" text-anchor="middle" class="subtitle">
+    Data Engineering &amp; Container Workflow
+  </text>
+
+  <!-- Source platform group -->
+  <rect
+      x="390" y="128"
+      width="820" height="135"
+      rx="18"
+      fill="#f1f8ed"
+      stroke="#a9d49a"
+      class="outline"
+  />
+
+  <text
+      x="800" y="160"
+      text-anchor="middle"
+      class="section-title"
+      fill="#315b39"
+  >
+    Open-source Audio Platforms
+  </text>
+
+  <!-- Freesound -->
+  <rect
+      x="425" y="174"
+      width="315" height="68"
+      rx="15"
+      fill="#fffdf9"
+      stroke="#a9d49a"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <!-- Waveform icon -->
+  <g stroke="#65a956" stroke-width="4" stroke-linecap="round">
+    <line x1="491" y1="206" x2="491" y2="220"/>
+    <line x1="498" y1="199" x2="498" y2="227"/>
+    <line x1="505" y1="191" x2="505" y2="235"/>
+    <line x1="512" y1="186" x2="512" y2="240"/>
+    <line x1="519" y1="194" x2="519" y2="232"/>
+    <line x1="526" y1="201" x2="526" y2="225"/>
+    <line x1="533" y1="207" x2="533" y2="219"/>
+  </g>
+
+  <text
+      x="552" y="217"
+      class="node-title"
+      fill="#315b39"
+  >
+    Freesound
+  </text>
+
+  <!-- ZapSplat -->
+  <rect
+      x="860" y="174"
+      width="315" height="68"
+      rx="15"
+      fill="#fffdf9"
+      stroke="#a9d49a"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <!-- Lightning icon -->
+  <path
+      d="M930 187 L911 217 L926 217 L917 240 L950 202 L934 202 L942 187 Z"
+      fill="none"
+      stroke="#65a956"
+      stroke-width="4"
+      stroke-linejoin="round"
+  />
+
+  <text
+      x="975" y="217"
+      class="node-title"
+      fill="#315b39"
+  >
+    ZapSplat
+  </text>
+
+  <!-- Source connectors -->
+  <path d="M582 242 V278 H800" class="connector"/>
+  <path d="M1017 242 V278 H800" class="connector"/>
+  <path
+      d="M800 278 V307"
+      class="connector"
+      marker-end="url(#arrow-grey)"
+  />
+
+  <!-- Collection -->
+  <rect
+      x="500" y="310"
+      width="600" height="85"
+      rx="16"
+      fill="#fceff1"
+      stroke="#f4aab2"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <!-- Search icon -->
+  <g fill="none" stroke="#e86e7b" stroke-width="3.5">
+    <circle cx="551" cy="352" r="16"/>
+    <line x1="563" y1="364" x2="579" y2="380"/>
+  </g>
+
+  <text
+      x="620" y="351"
+      class="node-title"
+      fill="#88444d"
+  >
+    Metadata Collection &amp; Validation
+  </text>
+
+  <text x="620" y="376" class="node-body">
+    Automated collection and validation of audio metadata
+  </text>
+
+  <path
+      d="M800 395 V425"
+      class="connector"
+      marker-end="url(#arrow-grey)"
+  />
+
+  <!-- Standardisation -->
+  <rect
+      x="500" y="432"
+      width="600" height="85"
+      rx="16"
+      fill="#f5effa"
+      stroke="#cba9e6"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <!-- Document icon -->
+  <g fill="none" stroke="#a365c8" stroke-width="3">
+    <rect x="537" y="452" width="34" height="43" rx="3"/>
+    <line x1="545" y1="466" x2="563" y2="466"/>
+    <line x1="545" y1="475" x2="563" y2="475"/>
+    <line x1="545" y1="484" x2="559" y2="484"/>
+  </g>
+
+  <text
+      x="620" y="473"
+      class="node-title"
+      fill="#66407f"
+  >
+    Metadata Standardisation (Python)
+  </text>
+
+  <text x="620" y="498" class="node-body">
+    Cleaning, normalisation and standardisation of metadata
+  </text>
+
+  <path
+      d="M800 517 V547"
+      class="connector"
+      marker-end="url(#arrow-grey)"
+  />
+
+  <!-- SQLite -->
+  <rect
+      x="500" y="554"
+      width="600" height="80"
+      rx="16"
+      fill="#edf8f7"
+      stroke="#7fcfcb"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <!-- Database icon -->
+  <g fill="none" stroke="#3fa6a2" stroke-width="3">
+    <ellipse cx="554" cy="574" rx="19" ry="7"/>
+    <path d="M535 574 V612"/>
+    <path d="M573 574 V612"/>
+    <path d="M535 589 C545 597 563 597 573 589"/>
+    <path d="M535 602 C545 610 563 610 573 602"/>
+    <path d="M535 612 C545 620 563 620 573 612"/>
+  </g>
+
+  <text
+      x="620" y="588"
+      class="node-title"
+      fill="#176b68"
+  >
+    SQLite Metadata Database
+  </text>
+
+  <text x="620" y="613" class="node-body">
+    Processed metadata snapshot for fast access
+  </text>
+
+  <!-- Branch -->
+  <path d="M800 634 V654" class="connector"/>
+  <path d="M455 654 H1145" class="connector"/>
+
+  <path
+      d="M455 654 V680"
+      class="connector"
+      marker-end="url(#arrow-grey)"
+  />
+
+  <path
+      d="M1145 654 V680"
+      class="connector"
+      marker-end="url(#arrow-grey)"
+  />
+
+  <!-- Streamlit -->
+  <rect
+      x="270" y="682"
+      width="395" height="80"
+      rx="16"
+      fill="#f1f8ed"
+      stroke="#a9d49a"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <!-- Chart icon -->
+  <g fill="#65a956">
+    <rect x="305" y="722" width="8" height="20"/>
+    <rect x="321" y="708" width="8" height="34"/>
+    <rect x="337" y="695" width="8" height="47"/>
+  </g>
+  <line
+      x1="298" y1="742"
+      x2="355" y2="742"
+      stroke="#65a956"
+      stroke-width="3"
+  />
+
+  <text
+      x="365" y="716"
+      class="small-title"
+      fill="#315b39"
+  >
+    Interactive Dashboard (Streamlit)
+  </text>
+
+  <text x="365" y="742" class="small-body">
+    Explore, analyse and filter audio metadata
+  </text>
+
+  <!-- PostgreSQL -->
+  <rect
+      x="935" y="682"
+      width="395" height="80"
+      rx="16"
+      fill="#f5effa"
+      stroke="#cba9e6"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <g fill="none" stroke="#a365c8" stroke-width="3">
+    <ellipse cx="988" cy="704" rx="18" ry="7"/>
+    <path d="M970 704 V740"/>
+    <path d="M1006 704 V740"/>
+    <path d="M970 716 C980 724 996 724 1006 716"/>
+    <path d="M970 729 C980 737 996 737 1006 729"/>
+    <path d="M970 740 C980 748 996 748 1006 740"/>
+  </g>
+
+  <text
+      x="1035" y="716"
+      class="small-title"
+      fill="#66407f"
+  >
+    PostgreSQL Export
+  </text>
+
+  <text x="1035" y="742" class="small-body">
+    Metadata &amp; analytics for advanced queries
+  </text>
+
+  <!-- Dashed local relation -->
+  <path
+      d="M415 762 V798 H690"
+      class="connector-green"
+      stroke-dasharray="10 9"
+  />
+
+  <path
+      d="M832 798 H1175 V837"
+      class="connector-purple"
+      stroke-dasharray="10 9"
+      marker-end="url(#arrow-purple)"
+  />
+
+  <rect
+      x="680" y="782"
+      width="165" height="31"
+      rx="10"
+      fill="#f8f5ec"
+  />
+
+  <text
+      x="762"
+      y="803"
+      text-anchor="middle"
+      class="connector-label"
+  >
+    containerised locally
+  </text>
+
+  <!-- Docker group -->
+  <rect
+      x="240" y="825"
+      width="1120" height="175"
+      rx="20"
+      fill="#f1f7fc"
+      stroke="#8ebce4"
+      class="outline"
+  />
+
+  <text
+      x="800" y="855"
+      text-anchor="middle"
+      class="section-title"
+      fill="#164f7f"
+  >
+    Local Container Workflow
+  </text>
+
+  <!-- Docker Desktop -->
+  <rect
+      x="270" y="870"
+      width="330" height="105"
+      rx="16"
+      fill="#fffdf9"
+      stroke="#8ebce4"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <!-- Docker-style icon -->
+  <g fill="#2f86c9">
+    <rect x="302" y="910" width="8" height="8"/>
+    <rect x="313" y="910" width="8" height="8"/>
+    <rect x="324" y="910" width="8" height="8"/>
+    <rect x="302" y="921" width="8" height="8"/>
+    <rect x="313" y="921" width="8" height="8"/>
+    <rect x="324" y="921" width="8" height="8"/>
+    <rect x="335" y="921" width="8" height="8"/>
+    <path d="M295 928 H350 C346 947 331 956 315 956 C303 956 296 946 295 928 Z"/>
+  </g>
+
+  <text
+      x="370" y="912"
+      class="small-title"
+      fill="#164f7f"
+  >
+    Docker Desktop
+  </text>
+
+  <text x="370" y="941" class="small-body">
+    Build · Run · Monitor
+  </text>
+
+  <!-- Docker Compose -->
+  <rect
+      x="635" y="870"
+      width="330" height="105"
+      rx="16"
+      fill="#fffdf9"
+      stroke="#8ebce4"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <!-- Compose cube icon -->
+  <g fill="none" stroke="#2f86c9" stroke-width="3">
+    <path d="M680 895 L702 908 L702 933 L680 946 L658 933 L658 908 Z"/>
+    <path d="M658 908 L680 921 L702 908"/>
+    <path d="M680 921 V946"/>
+  </g>
+
+  <text
+      x="740" y="912"
+      class="small-title"
+      fill="#164f7f"
+  >
+    Docker Compose
+  </text>
+
+  <text x="740" y="941" class="small-body">
+    Reproducible Startup
+  </text>
+
+  <!-- Streamlit container -->
+  <rect
+      x="1000" y="870"
+      width="330" height="105"
+      rx="16"
+      fill="#fffdf9"
+      stroke="#8ebce4"
+      class="outline"
+      filter="url(#softShadow)"
+  />
+
+  <!-- Container icon -->
+  <g fill="none" stroke="#2f86c9" stroke-width="3">
+    <rect x="1035" y="895" width="43" height="43" rx="4"/>
+    <rect x="1045" y="905" width="7" height="7" fill="#2f86c9"/>
+    <rect x="1060" y="905" width="7" height="7" fill="#2f86c9"/>
+    <rect x="1045" y="920" width="7" height="7" fill="#2f86c9"/>
+    <rect x="1060" y="920" width="7" height="7" fill="#2f86c9"/>
+  </g>
+
+  <text
+      x="1110" y="912"
+      class="small-title"
+      fill="#164f7f"
+  >
+    Streamlit Container
+  </text>
+
+  <text x="1110" y="941" class="small-body">
+    Non-root · Healthcheck
+  </text>
+
+  <!-- Docker workflow arrows -->
+  <path
+      d="M600 922 H625"
+      class="connector"
+      marker-end="url(#arrow-grey)"
+  />
+
+  <path
+      d="M965 922 H990"
+      class="connector"
+      marker-end="url(#arrow-grey)"
+  />
+</svg>

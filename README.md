@@ -43,6 +43,33 @@ Explore the acoustic metadata dataset through interactive Plotly charts, categor
 
 ---
 
+
+
+---
+
+## 🏗️ Data Engineering Workflow
+
+The following architecture illustrates the complete metadata engineering workflow used in this project—from collecting metadata from multiple open-source audio platforms to data standardisation, local storage, PostgreSQL export and containerised deployment.
+
+<p align="center">
+  <img src="assets/dashboard/architecture_overview.png"
+       alt="Acoustic Dataset Explorer Architecture"
+       width="1000">
+</p>
+
+---
+
+## 🐳 Docker Desktop Environment
+
+The project is fully containerised for reproducible local development. Docker Desktop manages the complete environment, while Docker Compose orchestrates the Streamlit application and supporting services.
+
+<p align="center">
+  <img src="assets/dashboard/docker-desktop.png"
+       alt="Docker Desktop"
+       width="1000">
+</p>
+
+
 ## ✨ Project Overview
 
 The Acoustic Dataset Explorer provides a reproducible workflow for analysing metadata from public acoustic datasets.
