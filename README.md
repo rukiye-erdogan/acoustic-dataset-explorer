@@ -101,6 +101,9 @@ The current dashboard analyses more than **2,600 audio files** collected from mu
 
 ```text
 acoustic-dataset-explorer/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
 ├── .streamlit/
 │   └── config.toml
 ├── assets/
@@ -110,11 +113,15 @@ acoustic-dataset-explorer/
 │   └── public/
 │       ├── acoustic_metadata.db
 │       └── acoustic_metadata_public.csv
-├── app.py
-├── import_to_postgres.py
-├── README.md
-├── requirements.txt
+├── .dockerignore
 ├── .gitignore
+├── Dockerfile
+├── docker-compose.yml
+├── app.py
+├── scripts/
+│   └── import_to_postgres.py
+├── requirements.txt
+├── README.md
 └── LICENSE
 ```
 
